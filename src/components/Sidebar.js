@@ -8,7 +8,7 @@ const Sidebar = () => {
   // be solved using ternary operator.
   if(!isMenuOpen) return null;
   return (
-    <div className="p-5 shadow-lg w-48">
+    <div className="p-5 col-span-1 shadow-xl w-48">
       <ul>
         <Link to="/"><li>Home</li></Link>
         <li>Sports</li>
