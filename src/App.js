@@ -4,6 +4,9 @@ import Head from './components/Head';
 import store from './utils/store';
 import Body from './components/Body';
 import { useEffect } from 'react';
+import { appRouter } from './AppRouter';
+import { RouterProvider } from 'react-router-dom';
+
 
 function App() {
   useEffect(() => {
@@ -14,7 +17,7 @@ function App() {
     <Provider store={store}>
     <div> 
       <Head />
-      <Body />
+      <RouterProvider router={appRouter} />
     </div>
     </Provider>
   );
